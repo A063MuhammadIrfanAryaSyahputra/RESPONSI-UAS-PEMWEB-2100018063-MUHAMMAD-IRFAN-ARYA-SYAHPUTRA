@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="a.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tugas Akhir</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg " style="background-color: #48b7e1">
+      <div class="container">
+        <a class="navbar-brand" href="#">MUHAMMAD IRFAN ARYA SYAHPUTRA - 063</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#containerkalender">Kelender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Pesan">Sampaikan Pesan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+
+<!-- Awal Kalkulator -->
+    <br />
+    <div class="text-end" >
+    <right><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#kalkulator" aria-controls="kalkulator">Tekan Untuk melihat Kalkulator</button><left></left> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+    </div><br />
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="kalkulator" aria-labelledby="kalkulator">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="kalkulator" >Kalkulator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <section>
+          <div class="container">
+            <div id="tampilan"></div>
+            <div class="tomboll">
+              <div class="tombol">C</div>
+              <div class="tombol">/</div>
+              <div class="tombol">*</div>
+              <div class="tombol">←</div>
+              <div class="tombol">7</div>
+              <div class="tombol">8</div>
+              <div class="tombol">9</div>
+              <div class="tombol">-</div>
+              <div class="tombol">4</div>
+              <div class="tombol">5</div>
+              <div class="tombol">6</div>
+              <div class="tombol">+</div>
+              <div class="tombol">1</div>
+              <div class="tombol">2</div>
+              <div class="tombol">3</div>
+              <div class="tombol">.</div>
+              <div class="tombol">(</div>
+              <div class="tombol">0</div>
+              <div class="tombol">)</div>
+              <div id="samadengan" class="tombol">=</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Akhir Calculator -->
+
+    <!-- Awal Menyamapaikan Pesan -->
+    <div class="text-end" >
+    <right><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#Pesan" aria-controls="Pesan">Sampaikan Pesan Anda</button><left></left> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+    </div><br />
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="Pesan" aria-labelledby="Pesan">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="Pesan" >Sampaikan Pesan Anda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div><br><br>
+      <form name="form1" method="post" action="proses.php">
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama  </td><br>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="nama" type="text" id="nama"></td>
+          </tr><br><br>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Komentar  </td><br>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="komentar" id="komentar"></textarea></td></tr>
+      <div class="offcanvas-body">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="Submit" value="Kirim">&nbsp;&nbsp;<input type="reset" name="Submit2" value="Batal">
+      </form><br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="lihatpesan.php">Lihat Pesan Anda</a>
+          </div>
+          </div>
+
+    <!-- Akhir Menyampaikan Pesan -->
+  
+
+    <!-- Awal Kalender -->
+    <div class="containerkalender">
+      <div class="kalender">
+        <div class="bulan">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="harii">
+          <div>Ming</div>
+          <div>Sen</div>
+          <div>Sel</div>
+          <div>Rab</div>
+          <div>Kam</div>
+          <div>Jum</div>
+          <div>Sabt</div>
+        </div>
+        <div class="hari"></div>
+      </div>
+    </div>
+    <script src="kalender.js"></script>
+    <script src="kalkulator.js"></script>
+    <!-- Akhir Kalender -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* CSS Kalkulator */
+.tombol:hover {
+  background-color: #52ffee;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.container {
+  max-width: 400px;
+  margin-right: 60px;
+}
+
+#tampilan {
+  text-align: left;
+  height: 70px;
+  padding: 16px 8px;
+  line-height: 70px;
+  font-size: 25px;
+}
+
+.tomboll {
+  display: grid;
+  border-bottom: 2.5px solid rgb(177, 239, 255);
+  border-left: 2.5px solid rgb(177, 239, 255);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tomboll > div {
+  border-top: 2.5px solid rgb(177, 239, 255);
+  border-right: 2.5px solid rgb(177, 239, 255);
+}
+
+.tombol {
+  border: 0.5px solid rgb(177, 239, 255);
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#samadengan {
+  background-color: rgb(147, 147, 254);
+  color: white;
+}
+/* Akhir Kalkulator */
+
+/* CSS Kalender */
+
+.containerkalender {
+  color: #eee;
+  display: flex;
+  justify-content: left;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  align-items: center;
+  transform: translateY(-35px);
+}
+
+.kalender {
+  width: 30rem;
+  height: 28rem;
+  background-color: #222227;
+  box-shadow: 0px 1px 44px -1px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 0px 1px 44px -1px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 1px 44px -1px rgba(0, 0, 0, 0.44);
+  opacity: 0.9;
+}
+
+.bulan {
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(16, 173, 204);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.bulan i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.bulan h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2px;
+}
+
+.bulan p {
+  font-size: 1.4rem;
+}
+
+.harii {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.harii div {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.hari {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.hari div {
+  font-size: 18px;
+  margin: 2px;
+  width: 62px;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(180, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.hari div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.hariini {
+  background-color: rgb(38, 208, 255);
+}
+/* Akhir Kalender */
+
+/* CSS Tag Umum */
+nav {
+  box-shadow: -1px 20px 25px -7px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: -1px 20px 25px -7px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: -1px 20px 25px -7px rgba(0, 0, 0, 0.24);
+}
+button {
+  box-shadow: 11px 13px 31px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 13px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 13px 31px -7px rgba(0, 0, 0, 0.75);
+}
+/* Akhir CSS Tag Umum */
+
+/* CSS Scroll Bar */
+body {
+  margin-bottom: 200%;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(71, 145, 255);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(91, 179, 255);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(81, 174, 255);
+}
+/* Akhir CSS Scroll Bar */
